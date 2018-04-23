@@ -1,0 +1,20 @@
+#!/bin/bash
+##PBS -P ASTR1005
+#PBS -q k80
+##PBS -l select=1:ncpus=8:mpiprocs=1
+#PBS -l walltime=12:00:00
+#PBS -N tf_unet
+#PBS -m abe
+##PBS -M yabi@aims.ac.za
+
+## load modules 
+#module add chpc/python/3.6.0_gcc-6.3.0
+
+#use my root environment 
+source activate py27
+
+cd /home/yfantaye/SETI/hide
+bash ./data/simulate_1year.sh
+
+#--data_root=data/hide_sim_30days_seeked/
+

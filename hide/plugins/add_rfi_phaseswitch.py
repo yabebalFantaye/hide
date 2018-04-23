@@ -59,6 +59,7 @@ class Plugin(BasePlugin):
                      params.rfideltaf, params.rfiexponent,
                      params.rfienhance, freq, time, rfiday, rfidamping)
         self.ctx.tod_vx += rfi
+
         self.ctx.tod_vx_rfi = rfi 
 
     def getTime(self):

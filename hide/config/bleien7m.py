@@ -59,6 +59,7 @@ plugins = ["hide.plugins.initialize",
 # ==================================================================
 # O U T P U T
 # ==================================================================
+output_path = "./data/1year"                        # path to output folder
 file_fmt = "TEST_{mode}_{polarization}_{date}.h5"
 coordinate_file_fmt = "coord7m%s.txt"       # coordinate file name format
 calibration_file_fmt = 'CALIBRATION_RSG_7m_{date}.txt' # calibration file name format
