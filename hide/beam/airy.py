@@ -17,7 +17,7 @@ Created on Apr 25, 2016
 
 author: jakeret
 '''
-from __future__ import print_function, division, absolute_import, unicode_literals
+from __future__ import print_function, division, absolute_import , unicode_literals
 
 from pkg_resources import resource_filename
 
@@ -40,6 +40,7 @@ def load_beam_profile(beam_spec, frequencies, params):
     """
 
     path = resource_filename(hide.__name__, PROFILE_PATH)
+    print(path)
     gain_sun = np.genfromtxt(path, skip_header=True)
     sun_freq = gain_sun[:,0]
     sun_Ae = np.radians(gain_sun[:,2])
